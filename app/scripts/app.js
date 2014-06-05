@@ -1,13 +1,14 @@
+/* global app:true */
+
 'use strict';
 
-angular
-  .module('ngYlApp', [
+var app = angular.module('ngYlApp', [
     'ngCookies',
     'ngResource',
     'ngSanitize',
     'ngRoute'
-  ])
-  .config(function ($routeProvider) {
+  ]);
+app.config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
