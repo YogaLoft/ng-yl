@@ -11,8 +11,8 @@ var app = angular.module('ngYlApp', [
 app.config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        templateUrl: 'views/workshops.html',
+        controller: 'WorkshopsCtrl'
       })
       .otherwise({
         redirectTo: '/'
