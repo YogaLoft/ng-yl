@@ -1,7 +1,8 @@
-<div ng-repeat="workshop in workshops">
+<div ng-repeat="(workshopId, workshop) in workshops">
   <h2>{{ workshop.title }}</h2>
   <p>{{ workshop.description }}</p>
-  <a ng-click="deleteWorkshop($index)">delete</a>
+  <a href="#/workshops/{{ workshopId }}">more...</a>
+  <a ng-click="deleteWorkshop(workshopId)">delete</a>
 </div>
 
 <form ng-submit="submitWorkshop()">
